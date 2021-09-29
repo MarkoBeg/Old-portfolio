@@ -1,0 +1,147 @@
+.section-cards {
+    padding: 100px 0;
+    background-color: $warmblack;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+
+    h2 {
+        position: absolute;
+        z-index: 1;
+        top: 30px;
+        margin-bottom: 15px;
+        margin: 0 auto;
+        font-size: 36px;
+        color: #fff;
+        text-transform: capitalize;
+        font-weight: 600;
+        font-family: "Exe";
+        border-bottom: 1px dotted #fff;
+
+    }
+
+
+    .cards-box {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        padding-top: 15px;
+
+
+
+
+
+
+        .card-body {
+            margin: 15px 15px;
+            padding: 100px;
+            background-color: $gray;
+            text-align: center;
+            border: 2px solid $gray;
+            position: relative;
+            color: #fff;
+            overflow: hidden;
+            cursor: pointer;
+
+
+            &:hover {
+                background-color: $light-purple;
+
+                i {
+                    transform: translateY(-70px);
+                    transition: 0.2s ease;
+                }
+            }
+
+            &:hover .card-text {
+                h3 {
+                    opacity: 1;
+                    transition: 1s ease;
+                }
+
+                p {
+                    opacity: 1;
+                    transition: 1.5s ease;
+                    transform: translateY(-5px);
+                }
+            }
+
+
+
+            .card-img i {
+                position: absolute;
+                left: 0;
+                right: 0;
+                padding-top: 10px;
+                text-align: center;
+                transition: 0.5s ease;
+                font-size: 55px;
+
+
+            }
+
+            .card-text {
+
+
+                h3 {
+                    font-family: "Exe";
+                    font-size: 34px;
+                    font-weight: 400;
+                    opacity: 0;
+                    text-align: center;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color: #fff;
+
+
+                }
+
+                p {
+                    font-size: 20px;
+                    font-family: "Exe";
+                    font-weight: 600;
+                    opacity: 0;
+                    text-align: center;
+                    line-height: 1.4;
+                    letter-spacing: 0.8px;
+                    transform: translateY(50px);
+                    color: #fff;
+
+                }
+
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .section-cards {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+
+        .cards-box {
+            flex-direction: column;
+
+            .card-body {
+                .card-text {
+                    h3 {
+                        font-size: 18px;
+                    }
+
+                    p {
+                        font-size: 18px;
+                        text-align: center;
+                    }
+                }
+            }
+
+        }
+
+
+    }
+}

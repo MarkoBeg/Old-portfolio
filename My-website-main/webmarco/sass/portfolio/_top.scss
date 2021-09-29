@@ -1,0 +1,121 @@
+.top-section-wrapper {
+    background-color: $warmblack;
+    padding: 100px 0;
+
+
+    .content-left {
+
+        .content-left-text {
+            animation: flipInX 1s linear;
+
+            h3 {
+                text-transform: uppercase;
+                font-weight: bold;
+                font-family: "Exe";
+                font-size: 30px;
+                color: #fff;
+                padding-bottom: 25px;
+
+            }
+
+            h1 {
+                font-size: 56px;
+                letter-spacing: initial;
+                line-height: 1.25;
+                font-weight: 300;
+                text-transform: initial;
+                color: #fff;
+                padding-bottom: 15px;
+                padding-top: 35px;
+
+            }
+        }
+
+        .top-section-text {
+            h4 {
+                font-size: 36px;
+                letter-spacing: 1px;
+                line-height: 1.25;
+                font-weight: bold;
+                text-transform: capitalize;
+                color: #fff;
+                padding-bottom: 15px;
+                padding-top: 45px;
+                font-family: "Exe";
+                position: relative;
+
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    width: 80px;
+                    height: 2px;
+                    font-weight: 300;
+                    background-color: #fff;
+                    border-bottom: 0.5px solid #fff;
+                }
+            }
+
+            p {
+                font-family: "roboto";
+                font-size: 24px;
+                color: #fff;
+                letter-spacing: 1.4px;
+            }
+        }
+
+
+        .btn-left {
+
+            padding-top: 25px;
+            display: block;
+            animation: fadeInTopLeft 1s linear;
+
+
+            &:hover .fa-arrow-right {
+                transform: translateX(20px);
+            }
+
+            a {
+                background: #fff;
+                display: inline;
+                padding: 13px 55px;
+                text-decoration: none;
+                color: #000;
+                font-size: 24px;
+                font-family: "roboto";
+                font-weight: 400;
+                border-radius: 50px;
+
+
+
+                &:hover {
+                    background-color: $dark-blue;
+                }
+
+                .fa-arrow-right {
+                    font-size: 22px;
+                    padding-left: 15px;
+                    color: #000;
+                    transition: 0.5s ease-in-out;
+                }
+            }
+
+        }
+
+    }
+
+    .img-right {
+        padding: 35px 0;
+    }
+
+    img {
+        background-size: cover;
+        border-radius: 8px;
+        width: 100%;
+        box-shadow: 5px 5px 8px 4px rgba(255, 255, 255, 0.48);
+
+    }
+
+}

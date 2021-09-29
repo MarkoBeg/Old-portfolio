@@ -1,0 +1,35 @@
+.response {
+    padding: 150px 0;
+    text-align: center;
+
+    h1 {
+        padding-bottom: 50px;
+        font-size: 64px;
+        color: #fff;
+        font-family: $roboto;
+        font-weight: 400;
+        text-transform: uppercase;
+        animation: backOutDown 3s linear;
+
+
+    }
+
+    .response-text {
+        animation: heartBeat 1.5s infinite;
+
+        a {
+            padding-top: 50px;
+            text-decoration: none;
+            font-size: 48px;
+            color: #fff;
+            font-weight: 500;
+            font-family: $roboto;
+            font-style: italic;
+            opacity: 0.5;
+            cursor: pointer;
+
+        }
+    }
+
+
+}

@@ -1,0 +1,200 @@
+header {
+    padding-top: 20px;
+    padding-bottom: 15px;
+    background-color: $medium-blue;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    overflow: hidden;
+
+    @media (max-width: $lg) {
+        display: block;
+        padding-right: 35px;
+
+    }
+
+
+
+
+    .pre-header {
+        h1 {
+            font-family: $roboto;
+            font-size: 48px;
+            color: $gray-light;
+            text-decoration: none;
+            font-weight: 500;
+            padding-top: 15px;
+            position: relative;
+            margin-left: 45px;
+
+            @media (max-width: $lg) {
+                display: none;
+                text-align: center;
+                opacity: 1;
+                z-index: 0;
+                top: 50%;
+                list-style-position: inside;
+
+
+            }
+        }
+
+        ul {
+            padding: 5px 35px;
+            margin: 0 45px;
+
+
+            li {
+                display: inline-block;
+
+
+
+                @media (max-width: $lg) {
+                    display: none;
+
+
+                }
+
+                a {
+                    color: $gray-light;
+                    font-size: 25px;
+                    margin-left: 8px;
+
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    nav {
+
+
+        .hamburger-meni-btn {
+            display: none;
+            background-color: transparent;
+            color: #fff;
+            border: none;
+            font-size: 36px;
+            position: absolute;
+            top: 0px;
+            left: 2px;
+            outline: none;
+
+
+            .fa-times {
+                display: none;
+            }
+
+            &.opened {
+                .fa-times {
+                    display: block;
+                }
+
+                .fa-bars {
+                    display: none;
+                }
+            }
+
+            @media (max-width: $lg) {
+                display: block;
+
+            }
+        }
+
+        ul {
+            list-style: none;
+            width: 100%;
+            margin-right: 15px;
+
+
+
+
+            @media (max-width: $lg) {
+                display: none;
+
+
+
+            }
+
+            li {
+                display: inline-block;
+                margin-left: 15px;
+                padding: 8px 0;
+
+
+
+
+                @media (max-width: $lg) {
+                    display: block;
+                    text-align: center;
+
+
+
+
+
+                }
+
+                a {
+                    color: $gray-light;
+                    font-size: 24px;
+                    text-decoration: none;
+                    position: relative;
+
+
+                    @media (max-width: $lg) {
+
+                        &:hover {
+                            color: #fff;
+
+                            &::before {
+                                display: none;
+                            }
+
+                        }
+                    }
+
+
+
+
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        width: 0%;
+                        top: -5px;
+                        height: 3px;
+                        background: $rose-light;
+                        transition: 0.2s ease-in-out;
+                    }
+
+                    &:hover:before {
+                        transform: translateX(0px);
+                        width: 100%;
+
+                    }
+
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (min-width: 374px) {
+    .header {
+        width: 100%;
+
+        .nav {
+            width: 100%;
+        }
+    }
+
+}

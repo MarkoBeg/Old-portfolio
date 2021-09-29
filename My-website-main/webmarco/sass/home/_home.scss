@@ -1,0 +1,334 @@
+.hero-section {
+    padding: 130px 0;
+    background-color: #000;
+    overflow: hidden;
+
+
+    .card-box1 {
+        position: relative;
+        background: #0c0c0c;
+        left: 20px;
+        height: 450px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 5px;
+        top: 0;
+
+
+
+        .text-block {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding-top: 20px;
+            margin-left: 25px;
+        }
+
+        h1 {
+            font-size: 48px;
+            text-decoration: none;
+            font-family: "roboto";
+            text-transform: capitalize;
+            color: #11101d;
+            font-weight: 700px;
+            animation: fadeInLeft 1s linear;
+
+            span {
+                background-image: -webkit-linear-gradient(92deg, #fff, $medium-blue, #fff, $light-purple, #fff, $gray-light);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                -webkit-animation: front 10s linear infinite;
+            }
+        }
+
+        p {
+            font-size: 24px;
+            font-family: "Exe";
+            color: #fff;
+            opacity: 0.8;
+            font-weight: 200;
+            padding-top: 45px;
+
+        }
+
+        ul {
+            list-style: none;
+
+
+            li {
+                display: block;
+
+                a {
+                    color: #fff;
+                    text-decoration: none;
+                    font-size: 24px;
+
+                    &:hover {
+                        color: $dark-blue;
+                    }
+
+                }
+
+            }
+        }
+    }
+
+    .card-box2 {
+        position: relative;
+        background: #0c0c0c;
+        height: 300px;
+        z-index: 1;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        right: 150px;
+        top: 45px;
+        overflow: hidden;
+        border-radius: 3px;
+        margin-right: 55px;
+
+
+
+        p {
+            padding: 10px 15px;
+            position: absolute;
+            font-family: "roboto";
+            bottom: 25px;
+            font-size: 24px;
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            line-height: 1.5;
+            animation: fadeInLeft 1.5s linear;
+        }
+    }
+
+
+    h4 {
+        margin-right: 10px;
+        padding-top: 10px;
+        font-size: 32px;
+        text-decoration: none;
+        color: #fff;
+        font-style: italic;
+        font-family: "roboto";
+        position: relative;
+        animation: fadeInUpBig 1.7s linear;
+
+        &::after {
+            content: "";
+            width: 80px;
+            height: 3px;
+            top: 3px;
+            left: 5px;
+            position: absolute;
+            background-color: #fff;
+
+        }
+    }
+
+}
+
+@-webkit-keyframes front {
+    from {
+        -webkit-filter: front-rotate(0deg);
+    }
+
+    to {
+        -webkit-filter: front-rotate(-360deg);
+    }
+}
+
+@media (max-width: $xl) {
+    .hero-section {
+        .card-box1 {
+            width: 400px;
+            height: 400px;
+        }
+
+        .card-box2 {
+            margin-top: 100px;
+            width: 500px;
+        }
+    }
+
+}
+
+@media (max-width: $lg) {
+    .hero-section {
+        .card-box1 {
+            width: 400px;
+            height: 400px;
+
+            p {
+                display: none;
+            }
+        }
+
+
+
+        .card-box2 {
+            margin-top: 100px;
+            width: 550px;
+        }
+    }
+
+}
+
+@media (max-width: $md) {
+    .hero-section {
+        position: relative;
+        padding: 150px;
+
+
+        .card-box1 {
+            position: absolute;
+            height: 250px;
+            top: 15px;
+
+
+
+            h1 {
+                font-size: 30px;
+            }
+
+            h4 {
+                font-size: 24px;
+            }
+
+            p {
+                display: none;
+            }
+
+        }
+
+        .card-box2 {
+            position: absolute;
+            right: 0px;
+            height: 200px;
+            top: -15px;
+            width: 400px;
+
+            p {
+                padding-top: 10px;
+                font-size: 18px;
+                text-align: center;
+
+            }
+
+        }
+    }
+
+}
+
+@media (max-width: $sm) {
+    .hero-section {
+
+        .card-box1 {
+            position: absolute;
+            width: 300px;
+            height: 150px;
+
+            p {
+                display: none;
+            }
+
+            .icons {
+                font-size: 20px;
+                display: inline-block;
+                padding: 0 5px;
+
+            }
+
+
+
+        }
+
+        .card-box2 {
+            max-width: 200px;
+            height: 200px;
+
+            p {
+                opacity: 1;
+                text-align: center;
+                padding-top: 20px;
+                font-size: 15px;
+            }
+        }
+
+
+    }
+
+}
+
+@media (max-width: 425px) {
+    .hero-section {
+
+        position: relative;
+
+        .card-box1 {
+            position: absolute;
+            width: 250px;
+            height: 150px;
+            top: 15px;
+            left: 40px;
+
+            h1 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 20px;
+            }
+
+        }
+
+        .card-box2 {
+            position: relative;
+            bottom: 0;
+            right: 80px;
+            height: 200px;
+            width: 270px;
+            border: 1;
+
+            p {
+                opacity: 0.7;
+                text-align: center;
+                padding-top: 20px;
+                font-size: 15px;
+            }
+
+        }
+    }
+
+}
+
+@media (max-width: 300px) {
+    .hero-section {
+        position: relative;
+        margin: 0;
+        padding: 150px 0;
+
+
+
+        .card-box1 {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            top: 15px;
+            left: 40px;
+
+
+        }
+
+        .card-box2 {
+            position: relative;
+            bottom: 0;
+            right: 0px;
+            height: 200px;
+            width: 270px;
+            border: 1;
+
+        }
+
+    }
+}

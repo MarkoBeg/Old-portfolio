@@ -1,0 +1,25 @@
+footer {
+    background-color: $medium-blue;
+    padding: 20px 0;
+    text-align: center;
+
+    h3 {
+        display: inline-block;
+        color: #fff;
+        padding: 10px 0;
+        font-family: "roboto";
+        text-transform: capitalize;
+        font-weight: 400;
+        letter-spacing: 1px;
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+
+    }
+
+    p {
+        font-size: 28px;
+        color: #fff;
+    }
+
+
+}

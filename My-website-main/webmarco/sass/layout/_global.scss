@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500&family=Roboto:wght@300;400;500&display=swap');
+
+//Fonts-------
+
+
+$Ex2: "Exo2",
+sans-serif;
+$roboto: "roboto",
+sans-serif;
+
+
+//Colors
+$medium-blue: #11101d;
+$light-purple:#332E40;
+$dark-blue: #4682B4;
+$ligh-white: #EEE2DC;
+$light-gray: #a4b3b6;
+$light-blue: #5680e9;
+$blue: #84ceeb;
+$gray:#333435;
+$warmblack: #16161D;
+$black: #0c0c0c;
+$kind-blue: #ACC4F0;
+$blue-light: #5ab9ea;
+$gray-light: #c1c8e4;
+$rose: #a3b4df;
+$fire: linear-gradient(to left, #800b20, #911920, #a1271f, #b0351c, #bf4317, #c95611, #d16909, #d87c00, #da9700, #d6b200, #cdce00, #bce91b);
+$green: #2EE544;
+$rose-light: linear-gradient(to right top, #e9a9cd, #e0aed9, #d5b3e2, #c9b8e9, #bcbdee, #a3b4df, #8eaace, #7c9fbb, #618394, #4b666f, #394b4d, #293030);
+$ice-ice: linear-gradient(to top, #a28089, #8458B3, #d0bdf4, #e5eaf5, #a0d2eb);
+
+
+//media querys 
+$xl: 1200px;
+$lg: 992px;
+$md: 768px;
+$sm: 576px;
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+
+
+}
+
+body {
+    background-color: $medium-blue;
+}
